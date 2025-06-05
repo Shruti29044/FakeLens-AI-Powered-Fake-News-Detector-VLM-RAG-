@@ -37,42 +37,30 @@ The code installs all required packages automatically, including:
 * streamlit
 * git+[https://github.com/openai/CLIP.git](https://github.com/openai/CLIP.git)
 
-Frontend (Streamlit UI)
-This part builds a UI with:
-
-A textbox for the suspicious claim
-
-An image uploader
-
-An "Analyze" button
-
-Result sections showing all model outputs in human-readable format
-
- What You Get
-Once you run everything, you get a live app in Colab that can:
-
-Take any claim + image
-
-Run it through 5 different deep learning pipelines
-
-Show results like:
-
-Whether it’s fake
-
-If the image is forged
-
-If the image matches the claim
-
-What BLIP thinks the image is
-
-What a language model says about the claim
-
 ## 🚀 How to run in Google Colab
 
 1. Open the notebook in Colab.
 2. Run all cells to install dependencies and load models.
 3. When prompted, a public URL will be created using localtunnel.
 4. Open that URL in a new tab to use the web app.
+
+Frontend (Streamlit UI)
+This part builds a UI with:
+A textbox for the suspicious claim
+An image uploader
+An "Analyze" button
+Result sections showing all model outputs in human-readable format
+
+What You Get
+Once you run everything, you get a live app in Colab that can:
+Take any claim + image
+Run it through 5 different deep learning pipelines
+Show results like:
+Whether it’s fake
+If the image is forged
+If the image matches the claim 
+What BLIP thinks the image is
+What a language model says about the claim
 
 ## 💡 Sample claims to try
 
