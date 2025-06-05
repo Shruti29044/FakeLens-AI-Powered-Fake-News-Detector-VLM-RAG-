@@ -27,7 +27,7 @@ Performance & Evaluation:
 Through extensive testing on benchmark datasets and curated misinformation corpora, FakeLens achieved an overall accuracy of 87% in detecting fake news, significantly outperforming unimodal baselines. The inclusion of CNN-based image forgery detection and advanced textual analysis resulted in a 20% improvement in classification performance, particularly in detecting coordinated misinformation that spans both image and text domains.
 
 Deployment:
-The entire system was deployed using FastAPI for scalable API development and Streamlit for an interactive frontend interface. This allows real-time analysis of user-submitted content and provides visual explanations of detection results, enhancing transparency and user trust.
+The entire system was deployed using Streamlit for scalable API development and Streamlit for an interactive frontend interface. This allows real-time analysis of user-submitted content and provides visual explanations of detection results, enhancing transparency and user trust.
 
 Impact:
 FakeLens serves as a powerful tool in the fight against digital misinformation. Its multimodal capabilities make it suitable for journalistic verification, fact-checking platforms, social media moderation, and academic research on information integrity.
