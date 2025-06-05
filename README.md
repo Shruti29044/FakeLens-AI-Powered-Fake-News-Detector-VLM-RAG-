@@ -1,90 +1,45 @@
-🧠 FakeLens: Multimodal Fake News Detector
-FakeLens is a Colab-friendly, multimodal misinformation detection system that integrates:
+# FakeLens: Multimodal Fake News Detector
 
-📝 Text Classification using BERT
+FakeLens is a Google Colab-ready app that detects misinformation using both text and images. It combines models like BERT, CLIP, BLIP, CNN, and a RAG-like system for contextual verification — all accessible through a Streamlit interface.
 
-🔎 Keyword Extraction using TF-IDF
+## 🔧 What it does
 
-🧠 RAG-based Response Generation (FAISS + Sentence-BERT + FLAN-T5)
+* Classifies claims as Real or Fake using a BERT classifier.
+* Extracts important keywords using TF-IDF.
+* Checks image and text similarity using CLIP.
+* Detects forged images with a CNN-based image classifier (ResNet18).
+* Generates contextual responses using a Retrieval-Augmented Generator (Sentence-BERT + FLAN-T5).
+* Generates image captions using BLIP.
 
-🖼️ Image Forgery Detection using a CNN (ResNet18)
+## 📦 Dependencies
 
-🔗 Image-Text Similarity using OpenAI's CLIP
+The code installs all required packages automatically, including:
 
-📷 Image Captioning using BLIP
+* torch
+* torchvision
+* transformers
+* sentence-transformers
+* faiss-cpu
+* Pillow
+* scikit-learn
+* streamlit
+* git+[https://github.com/openai/CLIP.git](https://github.com/openai/CLIP.git)
 
-It runs entirely in Google Colab, combining Streamlit UI + Torch/Transformers pipeline, with no backend server required.
+## 🚀 How to run in Google Colab
 
-🚀 Try it on Google Colab
-Click below to launch the notebook in Colab:
+1. Open the notebook in Colab.
+2. Run all cells to install dependencies and load models.
+3. When prompted, a public URL will be created using localtunnel.
+4. Open that URL in a new tab to use the web app.
 
+## 💡 Sample claims to try
 
-📦 Dependencies
-The app uses the following packages:
+* The Earth is flat and vaccines are harmful.
+* COVID-19 was caused by 5G radiation.
+* NASA never landed on the moon.
+* Drinking bleach cures coronavirus.
+* Climate change is a hoax.
 
-bash
-Copy
-Edit
-streamlit
-torch
-transformers
-sentence-transformers
-faiss-cpu
-Pillow
-scikit-learn
-git+https://github.com/openai/CLIP.git
-These are installed automatically in the notebook.
+## ⚠️ Note
 
-🛠️ Features
-Component	Model	Description
-Text Classification	BERT (IMDb fine-tuned)	Classifies input claim as real or fake
-Keyword Extraction	TF-IDF	Highlights key terms from the claim
-RAG Response	FAISS + Sentence-BERT + FLAN-T5	Retrieves evidence and generates contextual reasoning
-Image Forgery Detection	ResNet18 CNN	Detects image tampering
-CLIP Similarity	CLIP (ViT-B/32)	Measures image-text semantic match
-Image Captioning	BLIP	Describes the uploaded image contextually
-
-📸 Sample Input
-Text:
-
-“The Earth is flat and vaccines are harmful.”
-
-Image:
-Example Moon Image
-
-🖥️ How to Use in Colab
-Upload Image & Enter Claim
-
-Click "Analyze"
-
-View:
-
-🔑 Keywords
-
-📄 Text classification
-
-🖼️ Forgery detection
-
-🔗 CLIP similarity
-
-📚 Generated response
-
-🧠 Image caption
-
-📁 Folder Structure (if exporting)
-bash
-Copy
-Edit
-├── app.py                # Streamlit app
-├── models/               # (Optional) Pretrained model caching
-├── assets/               # Sample images
-🧪 Example Claims to Try
-“Vaccines contain microchips for tracking.”
-
-“5G towers spread coronavirus.”
-
-“The Moon landing was staged in Hollywood.”
-
-⚠️ Disclaimer
-This tool is for research and educational purposes only. It does not provide absolute truth and should not be used as a final decision system.
-
+This tool is for research and education only. It doesn’t guarantee accuracy and should not be used for high-stakes decision-making.
