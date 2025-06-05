@@ -1,0 +1,32 @@
+Sample Prompts for Streamlit UI website:
+🌍 Science & Environment
+"The Earth is flat."
+
+"Climate change is a hoax created by scientists."
+
+"5G technology causes COVID-19."
+
+🧬 Health & Medicine
+"Vaccines contain microchips for government tracking."
+
+"Drinking bleach can cure coronavirus."
+
+"Natural remedies can completely cure cancer."
+
+🗳️ Politics & Government
+"The 2020 U.S. election was completely rigged."
+
+"Bill Gates is planning to depopulate the world."
+
+"COVID-19 was created as a bioweapon in a lab."
+
+📰 Media & Celebrities
+"A popular celebrity has died — again (when they haven't)."
+
+"Aliens landed and were covered up by NASA."
+
+You can also test neutral or true-sounding claims to verify how your model handles subtleties:
+
+"COVID-19 vaccines have been shown to reduce severe illness."
+
+"NASA successfully landed on the Moon in 1969."
