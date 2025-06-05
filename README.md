@@ -2,6 +2,18 @@
 
 FakeLens is a Google Colab-ready app that detects misinformation using both text and images. It combines models like BERT, CLIP, BLIP, CNN, and a RAG-like system for contextual verification — all accessible through a Streamlit interface.
 
+BERT → classifies text as real/fake
+
+CNN → checks image for forgery
+
+CLIP → compares image + text meaning
+
+RAG (retrieval + generation) → supports/explains claims
+
+BLIP → captions the image
+
+Streamlit + pyngrok → runs a UI in Colab
+
 ## 🔧 What it does
 
 * Classifies claims as Real or Fake using a BERT classifier.
@@ -24,6 +36,36 @@ The code installs all required packages automatically, including:
 * scikit-learn
 * streamlit
 * git+[https://github.com/openai/CLIP.git](https://github.com/openai/CLIP.git)
+
+Frontend (Streamlit UI)
+This part builds a UI with:
+
+A textbox for the suspicious claim
+
+An image uploader
+
+An "Analyze" button
+
+Result sections showing all model outputs in human-readable format
+
+ What You Get
+Once you run everything, you get a live app in Colab that can:
+
+Take any claim + image
+
+Run it through 5 different deep learning pipelines
+
+Show results like:
+
+Whether it’s fake
+
+If the image is forged
+
+If the image matches the claim
+
+What BLIP thinks the image is
+
+What a language model says about the claim
 
 ## 🚀 How to run in Google Colab
 
