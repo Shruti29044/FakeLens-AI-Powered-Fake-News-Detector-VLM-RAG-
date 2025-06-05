@@ -46,20 +46,32 @@ The code installs all required packages automatically, including:
 
 Frontend (Streamlit UI)
 This part builds a UI with:
+
 A textbox for the suspicious claim
+
 An image uploader
+
 An "Analyze" button
+
 Result sections showing all model outputs in human-readable format
 
 What You Get
 Once you run everything, you get a live app in Colab that can:
+
 Take any claim + image
+
 Run it through 5 different deep learning pipelines
+
 Show results like:
+
 Whether it’s fake
+
 If the image is forged
+
 If the image matches the claim 
+
 What BLIP thinks the image is
+
 What a language model says about the claim
 
 ## 💡 Sample claims to try
