@@ -1,1 +1,19 @@
+✅ Installs required libraries like Streamlit (UI), PyTorch (ML), and transformers (pretrained models).
 
+📦 Loads pre-trained AI models for text classification (BERT), image forgery detection (CNN), and captioning (BLIP).
+
+🔍 Uses BERT to check if a news claim is real or fake based on text.
+
+🖼️ Uses a CNN (ResNet18) to detect if an uploaded image looks edited or fake.
+
+🧠 Uses CLIP to measure how closely the image matches the claim text.
+
+📚 Uses RAG (Retriever + Generator) to fetch facts and explain the claim.
+
+🧾 Uses BLIP to automatically generate a caption describing the uploaded image.
+
+🧰 Builds a simple web UI with Streamlit to input text and upload an image.
+
+🚀 Displays results like keywords, fake/real predictions, image similarity, and captions.
+
+🌍 Uses ngrok to host the app online so you can share and use it in a browser from Google Colab.
